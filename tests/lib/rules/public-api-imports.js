@@ -68,14 +68,14 @@ ruleTester.run("public-api-imports", rule, {
         testFilesPatterns: ['**/*.test.ts', '**/*.test.ts', '**/StoreDecorator.tsx']
       }],
     },
-    // {
-    //   filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\forbidden.ts',
-    //   code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
-    //   errors: [{message: 'Тестовые данные необходимо импортировать из publicApi/testing.ts'}],
-    //   options: [{
-    //     alias: '@',
-    //     testFilesPatterns: ['**/*.test.ts', '**/*.test.ts', '**/StoreDecorator.tsx']
-    //   }],
-    // }
+    {
+      filename: 'C:\\Users\\tim\\Desktop\\javascript\\production_project\\src\\entities\\forbidden.ts',
+      code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/testing'",
+      errors: [{message: 'Тестовые данные необходимо импортировать из publicApi/testing.ts'}],
+      options: [{
+        alias: '@',
+        testFilesPatterns: ['**/*.test.ts', '**/*.test.ts', '**/StoreDecorator.tsx']
+      }],
+    }
   ],
 });
