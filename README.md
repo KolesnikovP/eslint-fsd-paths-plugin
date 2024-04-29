@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-ulbi-tv-plugin`:
+Next, install `eslint-plugin-kolesnikov-plugin`:
 
 ```sh
-npm install eslint-plugin-ulbi-tv-plugin --save-dev
+npm install eslint-plugin-kolesnikov-plugin --save-dev
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "ulbi-tv-plugin/rule-name": 2
+        "eslint-plugin-kolesnikov-plugin": 2
     }
 }
 ```
